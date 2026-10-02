@@ -1,0 +1,24 @@
+# WiW Midnight Server Notes
+
+Private WoW server project based on TrinityCore (master), built to match the BalticCore repack.
+
+## Versions
+- Game build: 12.1.0 (69587)
+- Database: TDB 1210.26091
+- Repack SQL fix: 17/09/2026
+
+## Not in this repo (never upload these)
+- The game client
+- worldserver.conf and bnetserver.conf (they hold passwords and IPs). Copy the .conf.dist files and edit your own copies locally.
+- Compiled files and build folders
+
+## Building
+Needs Visual Studio 2022 (C++ workload), CMake, Boost, OpenSSL and MySQL. Follow the TrinityCore install guide for Windows.
+
+## Workflow
+- Don't push straight to main.
+- Make your own branch, commit your changes, and open a pull request.
+- Test against a server running build 69587.
+
+## Contact
+Owner: Tyler
